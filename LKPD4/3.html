@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let detik = 4
+        let menit = 4
+        let jam = 4
+
+        if (detik + 1 == 60) {
+            detik = 0;
+
+            menit++
+
+            if (menit == 60) {
+                menit = 0;
+
+                jam++;
+
+                if (jam == 24) {
+                    jam = 0;
+                    menit = 0
+                    detik = 0;
+                }
+            }
+
+        } else { // kondisi dimana detik tambah 1 bukan 60
+            detik++;
+        }
+        console.log(`jam ${jam}, menit ${menit}, detik ${detik}`)
+    </script>
+</body>
+
+</html>

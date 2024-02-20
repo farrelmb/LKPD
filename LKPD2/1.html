@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nama = 'farrel'
+        let gaji_pokok = 2000000;
+
+        let pajak = 0.15;
+        let tunjangan = 0.20
+
+        let tunj = tunjangan * gaji_pokok
+        let pjk = tunj - pajak
+        let gaji_bersih = (tunjangan + gaji_pokok) - pjk
+
+        console.log(nama)
+        console.log(tunj)
+        console.log(pjk)
+        console.log(gaji_bersih)
+    </script>
+</body>
+
+</html>
